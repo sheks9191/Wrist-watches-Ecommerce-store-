@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&display=swap');
+    </style>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+    </style>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+    <title>Signal Stores | Home of quality watches</title>
+</head>
+<body>
+
+    <!--Header Section-->
+<section id="header">
+    <div class="navA-container">
+
+        <div class="menu-bar ">
+            <span class="menu-top"></span>
+            <span class="menu-middle"></span>
+            <span class="menu-down"></span>
+        </div>
+
+         <img src="./images/hublot ex.jpg">
+
+        
+
+        <div class="logo">
+            <h1><a href="#header"><span>S</span>ignal Stores</a></h1>
+        </div>
+
+       
+
+        <div class="cart">
+            <i class="fas fa-cart-arrow-down fa-2x"></i>
+            <span class="cart-counter">0</span>
+        </div>
+      
+    </div>
+
+    <div class="navB-container">
+        <div class="nav-list">
+            <ul>
+                <li><a href="#header">HOME</a></li>
+                <li><a href="#products">PRODUCTS</a></li>
+                <li><a href="#rating">REVIEW</a></li>
+                <li><a href="#banner">ABOUT</a></li>  
+                <li><a href="#footer">CONTACT</a></li>
+            </ul>
+        </div>
+
+        <form id="form">
+            <input type="text" id="search" class="searchB" placeholder="search...">
+        </form>
+    </div>
+</section>
+
+<div class="mobile-nav">
+    <div class="nav-mobile-list">
+        <img src="./images/hublot ex.jpg">
+    
+        <ul>
+            <li><a href="#header">HOME</a></li>
+            <li><a href="#products">PRODUCTS</a></li>
+            <li><a href="#rating">REVIEW</a></li>
+            <li><a href="#banner">ABOUT</a></li>
+            <li><a href="#footer">CONTACT</a></li>    
+        </ul>
+    </div>  
+</div>
+
+<!--Intro Section-->
+
+<section id="intro" class="intro">
+
+    <div class="login-form">
+            <img src="./images/hublot ex.jpg">
+            <div>
+                <button class="login-btn">Login</button>
+                <button class="signup-btn">Sign Up</button>
+            </div>     
+    </div>
+
+    <div class="intro-content">
+    
+        <div class="intro-text">
+            <h1><span class="text">Welcome/Bienvenue</span><br> to the home of quality wrist watch !</h1>
+            <a href="#header" id="intro-btn" class="btn">Order Now &#8594;</a>
+        </div>  
+    
+
+        <div class="brands-container">
+            <h2>Top Brands</h2>
+            <div class="brand-img"><img src="./images/brand-3.png" alt=""></div>
+        </div>
+    </div>
+
+
+    <div class='login-container'>
+
+        <form>
+
+            <div class="logo">
+                <h1><span>S</span>ignal Stores</h1>
+            </div>
+
+             <i class="far fa-times-circle"></i>
+            <div class="form-control">
+                <input type="text" required>
+                <label>Email</label>
+            </div>
+
+            <div class="form-control">
+                <input type="password" required>
+                <label>Password</label>
+            </div>
+
+            <button class="btn">Login</button>
+            <p class="text">Have you forgotten your password? <a href="#">Click Here</a> </p>
+        </form>
+    </div>
+
+    <div class="signup-container ">
+        <form >
+
+            <div class="logo">
+                <h1><span>S</span>ignal Stores</h1>
+            </div>
+
+             <i class="far fa-times-circle"></i>
+
+            
+            <div class="form-control">
+                <input type="text" required>
+                <label>Username</label>
+            </div>
+
+            <div class="form-control">
+                <input type="text" required>
+                <label>Email</label>
+            </div>
+
+            <div class="form-control">
+                <input type="password" required>
+                <label>Password</label>
+            </div>
+
+            <button class="btn">Submit</button>
+        </form>
+
+    </div>
+</section>
+
+<!--Cart Section-->
+
+<section class="table-cart">
+    <div class="table-container">
+        <table class="cart-table">
+        <thead>
+            <tr>
+                <th>PRODUCT</th>
+                <th>QUANTITY</th>
+                <th>PRICE</th>
+                <th><i class="far fa-trash-alt"></i></th>
+                
+            </tr> 
+               
+       </thead>
+
+       <tbody id="table-body"></tbody>    
+    </table>
+    <div class="cart-total">
+        <span class="total-title"><b>Total:</b></span>
+        <span class="total-price">$0.00</span>
+        <button class="btn purchase-btn">PURCHASE</button>
+    </div>
+    
+        
+    </div>
+</section>
+    
+
+    <!-- Featured Products-->
+    <section id="products" class="featured-products">
+
+        <div class="product-title">
+            <h2>All Products</h2>
+
+            <div class="brand-lists">
+                <div class="brand-title">
+                      <h4>Top brands</h4>
+                      <div class="brand-button">
+                           <i class="fas fa-chevron-down"></i>
+                           <i class="fas fa-chevron-up"></i>
+                      </div>
+                     
+                </div>
+              
+            <ul class="brand-list">
+                <li id="rolex">Rolex Watches</li>
+                <li id="hublot">Hublot Watches</li>
+                <li id="binbond">Binbond Watches</li>
+                <li id="nibosi">Nibosi Watches</li>
+                <li id="micheal">Micheal Kors</li>
+                <li id="timex">Timex Watches</li>
+            </ul>
+            </div>
+          
+           
+        </div>
+    
+        <div class="featured-content"></div>
+        </section>
+
+
+
+    <!--Special Products-->
+
+        <section class="special-container">
+
+            <div class="special-title"><h2>Special Offers</h2></div>
+
+        <div class="special-offers">
+
+        <div class="special-content">
+            <img src="./images/apple-watch-s6-1.jpg" alt="">
+
+                <h3>Apple S6</h3>
+                <p>Released 2020, September 18<br>36.5g, 10.4mm thickness<br>watchOS 7.0, up to 8.1<br>32GB storage, no card slot</p>
+                <a href="#" class="btn">Order Now &#8594;</a>   
+        </div>
+
+        
+        <div class="special-content">
+            <img src="./images/huawei-watch-gt3-01.jpg" alt="">
+            
+                <h3>Huawei GT3</h3>
+                <p>Released 2021, November 11<br>35g (42mm) / 42.6g (46mm), 11mm thickness<br> Proprietary OS<br>4GB 32MB RAM storage, no card slot</p>
+                <a href="#" class="btn">Order Now &#8594;</a>   
+        </div>
+
+        
+        <div class="special-content">
+            <img src="./images/apple-watch-se-2.jpg" alt="">
+            
+                <h3>Apple SE</h3>
+                <p>Released 2020, September 18<br>36.4g, 10.4mm thickness<br>watchOS 7.0, up to 8.1<br>32GB storage, no card slot</p>
+                <a href="#" class="btn">Order Now &#8594;</a>    
+        </div>
+    </div>
+
+    </section>
+
+    <!--New Arrival & Customer's Rating-->
+<secttion id="rating">
+    <div class="rating-arrival-container">
+
+        <div class="new-arrival">
+            <div class="arrival-title"><h2>New Arrival</h2></div>
+
+                <div class="arrival-images">
+                    <img src="./images/binbond-1c.png" alt="binbond">
+                    <img src="./images/swiss1a.png" alt="brigada">
+                    <img src="./images/reward-1a.png" alt="reward">
+                    <img src="./images/benyar-1a.png" alt="benyar">
+                    <img src="./images/swiss2a.png" alt="brigada">
+                    <img src="./images/versace-1e.png" alt="versace">
+                    <img src="./images/benyar-2a.png" alt="benyar">
+                    <img src="./images/versace-1h.png" alt="versace">
+                    <img src="./images/benyar-3a.png" alt="benyar">
+                    <img src="./images/swiss3a.png" alt="burberry">
+                    <img src="./images/versace-1g.png" alt="versace">
+                    <img src="./images/benyar-4a.png" alt="benyar">
+                    <img src="./images/swiss4a.png" alt="carnival">
+                    <img src="./images/benyar-7a.png" alt="benyar">
+                </div>
+
+                <div class="left-btn"><i class="fas fa-arrow-circle-left fa-2x"></i></div>
+                <div class="right-btn"><i class="fas fa-arrow-circle-right fa-2x"></i></div>
+            </div>
+
+        <div class="rating-container">
+            <div class="rating-title"><h2>Customer's Review</h2></div>
+            <div class="right-arrow"><i class="fas fa-arrow-right fa-2x"></i></i></div>
+        <div class="rating-row">
+
+            <div class="rating-column">
+             <div class="rating">
+                 <h4>John Smith</h4>
+                 <i class="fa fa-star" ></i>
+                 <i class="fa fa-star" ></i>
+                 <i class="fa fa-star" ></i>
+                 <i class="fa fa-star" ></i>
+                 <i class="fa fa-star" ></i>  
+             </div>
+
+             <div class="rating-info">
+                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, nemo suscipit eos nihil saepe quidem repellendus deleniti dicta odit et, cum similique excepturi, fugiat fuga architecto non officia! Repudiandae fuga veniam dolorem, facere numquam, temporibus voluptatibus magni cupiditate architecto cum est, iusto ex. Inventore eligendi temporibus unde? Qui, iste esse.</p>
+             </div>
+
+             <div class="average-rating">
+                  <h4>Avg.Rating</h4>
+                  <p>(4.8/5.0)</p>
+             </div>
+            </div>
+
+            
+            <div class="rating-column">
+             <div class="rating">
+                 <h4>Micheal Jordan</h4>
+                 <i class="fa fa-star" ></i>
+                 <i class="fa fa-star" ></i>
+                 <i class="fa fa-star" ></i>
+                 <i class="fa fa-star" ></i>
+                 <i class="fa fa-star-half-alt" ></i>  
+             </div>
+
+             <div class="rating-info">
+                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, ea voluptates nisi atque tempora quidem tempore quo quisquam harum deserunt in corrupti amet ipsa nulla accusantium soluta labore ducimus numquam quae, ut corporis magni! Atque quaerat debitis qui dolores quasi, aperiam quae doloribus.</p>
+             </div>
+
+             <div class="average-rating">
+                  <h4>Avg.Rating</h4>
+                  <p>(4.8/5.0)</p>
+             </div>
+            </div>
+
+            
+            <div class="rating-column">
+             <div class="rating">
+                 <h4>Olumide Sekooni</h4>
+                 <i class="fa fa-star"></i>
+                 <i class="fa fa-star"></i>
+                 <i class="fa fa-star"></i>
+                 <i class="fa fa-star"></i>
+                 <i class="fa fa-star"></i>  
+             </div>
+
+             <div class="rating-info">
+                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa illum corrupti quidem velit placeat esse veritatis, id inventore, doloremque doloribus voluptas eligendi autem provident at! Molestiae, earum qui voluptatem fugit neque pariatur dolor excepturi, veritatis provident praesentium modi repellat rem. Laborum odit maxime dolorem libero!</p>
+             </div>
+
+             <div class="average-rating">
+                  <h4>Avg.Rating</h4>
+                  <p>(4.8/5.0)</p>
+             </div>
+            </div>
+
+            
+            <div class="rating-column">
+             <div class="rating">
+                 <h4>Segun Peter</h4>
+                 <i class="fa fa-star"></i>
+                 <i class="fa fa-star"></i>
+                 <i class="fa fa-star"></i>
+                 <i class="fa fa-star"></i>
+                 <i class="fa fa-star"></i>  
+             </div>
+
+             <div class="rating-info">
+                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa illum corrupti quidem velit placeat esse veritatis, id inventore, doloremque doloribus voluptas eligendi autem provident at! Molestiae, earum qui voluptatem fugit neque pariatur dolor excepturi, veritatis provident praesentium modi repellat rem. Laborum odit maxime dolorem libero!</p>
+             </div>
+
+             <div class="average-rating">
+                  <h4>Avg.Rating</h4>
+                  <p>(4.8/5.0)</p>
+             </div>
+            </div>
+
+            
+            <div class="rating-column">
+             <div class="rating">
+                 <h4>Opeyemi Williams</h4>
+                 <i class="fa fa-star"></i>
+                 <i class="fa fa-star"></i>
+                 <i class="fa fa-star"></i>
+                 <i class="fa fa-star"></i>
+                 <i class="fa fa-star-half-alt"></i>  
+             </div>
+
+             <div class="rating-info">
+                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic unde cupiditate aperiam alias eveniet. Incidunt consequuntur harum, distinctio sint, nemo vero maxime impedit quaerat nisi quia voluptate, possimus inventore at quas! Eos quo nesciunt officiis, vero nulla alias nam. Deserunt.</p>
+             </div>
+
+             <div class="average-rating">
+                  <h4>Avg.Rating</h4>
+                  <p>(4.8/5.0)</p>
+             </div>
+            </div>
+
+             <div class="rating-column">
+             <div class="rating">
+                 <h4>Henry Igwe</h4>
+                 <i class="fa fa-star"></i>
+                 <i class="fa fa-star"></i>
+                 <i class="fa fa-star"></i>
+                 <i class="fa fa-star"></i>
+                 <i class="fa fa-star"></i>  
+             </div>
+
+             <div class="rating-info">
+                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit voluptates eveniet odit? Explicabo excepturi itaque ab iure rem cupiditate, sed earum iusto quibusdam iste ad ea tempore minima non, voluptate libero similique veniam, in a facere eveniet cum! Eaque voluptas magnam velit quo explicabo assumenda rem illum nobis est reprehenderit!</p>
+             </div>
+
+             <div class="average-rating">
+                  <h4>Avg.Rating</h4>
+                  <p>(4.8/5.0)</p>
+             </div>
+            </div>  
+
+        </div>    
+                   
+        </div>
+
+    </div>
+</secttion>
+
+        <!--Banner Section-->
+<section id="about"> 
+<div class="about-container">    
+    <div class="about-1">
+        <p><span>Signal</span> stores are the best when it comes to delivering quality products 
+             to their customers. We partner with top wrist-watch brands around the world in order to bring the best to 
+             your door steps. If you are looking to purchase the latest wristwatches with the most up-to-date designs that
+             are of superior quality when compared to others, signal is the best retail outlet to consider.
+       </p>
+    </div>
+    <div class="about-2">
+           <p>Get the latest and greatest offers from us by subscribing to our newsletter</p>
+           <input type="text" placeholder="Your Email">
+           <a href="#" class="btn">Subscribe</a>
+   </div>
+</div>
+    
+</section>  
+
+      <!-- Footer -->
+   <section id="footer">
+    <div class="footer-container">
+        <div class="footer-column-1">
+            <h3>Download Our App</h3>
+            <p>App available for Andriod and Ios mobile phones</p>
+            <div class="apps-logo">
+                <img src="./images/google playstore.png" alt="playstore">
+                <img src="./images/App store.png" alt="appstore">
+           </div>
+        </div>
+
+        <div class="footer-column-2">
+            <h3>Quick Contacts</h3>
+           <ul>
+               <li><a href="">+2348119460199</a></li>
+               <li><a href="">+2349038951193</a></li>
+               <li><a href="">signal_stores@yahoomail.com</a></li>
+               <li><a href="">signalstores@gmail.com</a></li>
+           </ul> 
+
+        </div>
+           
+
+     <div class="footer-column-3">
+         <h3>Useful Links</h3>
+           <ul>
+               <li><a href="">Coupons</a></li>
+               <li><a href="">Blog Post</a></li>
+               <li><a href="">Return Policy</a></li>
+               <li><a href="">Affliates</a></li>
+           </ul>       
+     </div>
+
+     <div class="footer-column-4">
+         <h3>Follow Us</h3>
+           <ul>
+               <li><a href=""><i class="fab fa-facebook-square"></i> Facebook</a></li>
+               <li><a href=""><i class="fab fa-instagram"></i> Instagram</a></li>
+               <li><a href=""><i class="fab fa-twitter"></i> Twitter</a></li>
+               <li><a href=""><i class="fab fa-youtube"></i> Youtube</a></li>
+           </ul>       
+     </div>
+    </div>
+</section>
+
+<div class="copyright"><i class="far fa-copyright"></i>signalstores | by Sekooni Olumide</div>
+    <script src="main.js"></script>
+</body>
+</html>
